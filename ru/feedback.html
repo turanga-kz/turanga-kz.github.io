@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>
+		Связаться с нами 	</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../media/css/css.css" rel="stylesheet" type="text/css">
+		<link href="../media/img/favico.ico" rel="shortcut icon" type="image/x-icon">
+		
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta property="og:title" content="Компания ТОО «Туранга»"/>
+		<meta property="og:description" content="Компания ТОО «Туранга»"/>
+		<meta property="og:type" content="article"/>
+		<meta property="og:url" content="" />
+		<!--[if IE]>
+		<script src="/media/js/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="../media/js/bxslider/jquery.bxslider.css">
+</head>
+<body  class="under">
+
+
+
+<div id="top" style="display: none;">Наверх</div>
+<header>
+
+
+
+  
+  <i></i>
+   <u class="ten"></u>
+  <div class="menublock">
+  <button class="menu-btn" id="menu-btn-1">☰</button>   
+
+	<ul class="menu">
+		<li class="logo"><a href="ru/index.html"></a></li>
+															<li	><a  href="https://turanga.com.kz/" class="mmenu__link">О компании </a>
+																		</li>
+																		
+																		<li	><a  href="" class="mmenu__link">Каталог</a>
+																		</li>
+																		<li	><a  href="" class="mmenu__link">Контакты</a>
+																		</li>
+																				
+		<li class="icons">
+		           <a href="ru/feedback.html" id="mail"></a>	   
+		</li>
+	</ul>	
+   </div>
+                                                               
+   	 
+</header> 
+
+		<nav class="pushy pushy-left" id="mobile-menu">
+
+		<div class="pushy-content">
+			<ul>
+		            													<li class="pushy-submenu pushy-submenu-closed"><a  href="https://turanga.com.kz/" class="mmenu__link">О компании </a>
+																		</li>
+																		
+																		<li class="pushy-submenu pushy-submenu-closed"><a  href="" class="mmenu__link">Каталог</a>
+																		</li>
+																		
+																		<li class="pushy-submenu pushy-submenu-closed"><a  href="" class="mmenu__link">Контакты</a>
+																		</li>
+										
+			</ul>
+			<a class="pushy-link close">&#10006;&nbsp;&nbsp; Закрыть</a>
+		</div>
+	</nav>
+
+<div class="fix">
+		<div class="page-text">
+<h1>Написать нам</h1>
+
+<div>Вы можете направлять свои предложения и замечания на «Обратную связь» или на E-mail <a href="mailto:mail@turanga.com.kz">mail@turanga.com.kz</a></div>
+
+
+
+<form class="feedback" action="feedback.html" method="POST">
+	<div class="form-element">
+		<input type="text" name="name" placeholder="Ваше имя *" class="required">
+	</div>
+	
+	<div class="form-element">
+		<input type="text" name="phone" placeholder="Ваш телефон">
+	</div>
+	
+	<div class="form-element">
+		<input type="text" name="email" placeholder="Ваш e-mail *" class="required">
+	</div>
+	
+	<div class="form-element">
+		<textarea name="question" placeholder="Вопрос или предложение *" class="required"></textarea>
+	</div>
+	
+	<div class="form-element">
+		<img src="../captcha.gif">
+		<input type="text" name="code" placeholder="Код с картинки *" class="required">
+	</div>
+	<div class="form-element">
+ <br> 	<button id="feedback" name="send" class="form-element">Отправить</button>
+	<span class="notice">Поля, отмеченные *, обязательны к заполнению</span>
+	</div>
+</form>
+
+
+
+
+<script>
+	$(function(){
+		$('form').submit(function(e){
+			var err = 0;
+			
+			// Проверяем обязательные поля на пустоту
+			$('.required').each(function(indx, elem){
+				if($(elem).val() == '')
+					err = 1;
+			});
+			
+			// Если хоть одно поле не заполнено, не даем отправиться форме и выдаем сообщение
+			if(err > 0){
+				e.preventDefault();
+				alert('Вы не заполнили все обязательные поля');
+			}
+		});
+	});
+</script>
+
+
+<style>
+	.form-element input, .form-element textarea{
+		display:block;
+		width:300px;
+		margin-left:50px;
+		padding:10px;
+		font-family: Arial;
+		border:1px solid #DFDFDF;
+	}
+	
+	form.feedback{margin-top:25px;}
+	.form-element{display:block;margin:10px 0;}
+	.form-element input:focus, .form-element textarea:focus{outline:none;}
+	button#vopros{cursor:pointer;}
+	span.notice{display:block;margin-top:15px;color:red;}
+	.form-element textarea{height:100px;}
+	.form-element img{display:block;margin:0 0 10px 50px;}
+</style>
+</div></div>
+
+
+<footer>
+    
+	<div class="container-fluid fut2">
+	    <div class="container">
+		     <div class="row">
+			      <div class="col-sm adres">
+						111000, Республика Казахстан, <br> г. Костанай, проспект Аль-Фараби, строение 74, оф. 302     
+					</div>
+				  <div class="col-sm phone">
+						Телефон:
+                        <b>+7 (705) 205 25 32</b>
+			      </div>
+				  <div class="col-sm fax">
+						Факс:
+                        <b>+7 (705) 205 25 32</b>
+			      </div>
+				  <div class="col-sm mail">
+						Электронный адрес:
+                        <a href="mailto:kengroup@kengroup.kz">mail@turanga.com.kz</a>
+			      </div>
+			 </div>
+		</div>
+	</div>
+	<div class="container">
+	   <div class="row">
+			 <div class="col-sm">
+			      <div class="copy">
+					<b>© 2022 ТОО «Туранга»</b>
+					Все права защищены
+				 </div>
+			 </div>
+			 <div class="col-sm">
+			     <div class="creatida">
+					© 2022 Разработка и поддержка
+					<a href="https://thehub.su/">МСО the Hub</a>
+				 </div>
+			 </div>
+			 
+		</div> 
+		<ul class="futmenu">
+			 										<li><a  href="https://turanga.com.kz/" class="mmenu__link">О компании </a>
+																		</li>
+																		<li><a  href="" class="mmenu__link">Каталог</a>
+																		</li>
+																		<li><a  href="" class="mmenu__link">Контакты</a>
+																		</li>
+										</ul> 
+	</div>
+</footer>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+		
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="../../media/js/pushy/pushy.min.js"></script>
+<link rel="stylesheet" href="../../media/js/pushy/pushy.css">
+  
+  
+<script>
+   $('#slider').bxSlider({
+   mode: 'fade', 
+   auto: true,
+   autoControls: true,
+   speed:700   
+  
+});
+ </script>
+ 
+ <script>
+   $('#slider2').bxSlider({
+   mode: 'fade', 
+   auto: false,
+   autoControls: true,
+   speed:700,
+   adaptiveHeight: true   
+  
+});
+ </script>
+ 
+ 
+ <script>
+
+ $(function () {
+     $('a.kz').click(function () {
+							$('ul.wet_sitys').fadeIn("slow");
+						     $('a.kz').css("border", "0");
+                            	return false;  							
+						});
+					
+                    $(document).click( function(){							
+							$('ul.wet_sitys').fadeOut("slow");
+							$('a.kz').css("border", "1px solid #747d85");
+                           					
+					
+});				
+					
+					
+$(document).click( function(event){
+	if( $(event.target).closest("form.top-menu-second__form").length ) 
+	return;
+	$("form.top-menu-second__form").fadeOut("slow");
+    $("#form_search").css("visibility", "visible");
+	event.stopPropagation();
+});		
+	
+$("#form_search").click(function () {
+    $(this).css("visibility", "hidden");
+    $("form.top-menu-second__form").fadeIn("slow");
+    return false;	
+	
+});		
+	
+});		
+		
+</script>
+ 
+ 
+ <script>
+	var InfoWindow = {},
+	InfoWindowCount = 0;
+      function initMap() {	  
+	   
+        var uluru = {lat: 49.83333, lng: 73.1658};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: uluru
+        });
+		
+		addMarker({
+		   coordinates:{lat:50.2797, lng:57.2072},
+		   info:'<div class="pipfon2">Актюбинск</div>' 
+		});
+		
+		addMarker({
+		   coordinates:{lat:53.2144, lng:63.6246},
+		   info:'<div class="pipfon2">Костанай</div>' 
+		});	
+
+      		
+		addMarker({
+		   coordinates:{lat:49.8019, lng:73.1021},
+		   info:'<div class="pipfon2">Караганда</div>' 
+		});
+		
+		addMarker({
+		   coordinates:{lat:52.2833, lng:76.9667},
+		   info:'<div class="pipfon2">Павлодар</div>' 
+		});		
+		
+		addMarker({
+		   coordinates:{lat: 51.1801, lng: 71.446},
+		   info:'<div class="pipfon2">Астана</div>' 
+		
+		});
+		
+		addMarker({
+		   coordinates:{lat:	49.9714, lng:82.6059},
+		   info:'<div class="pipfon2">Усть-Каменогорск</div>' 
+		});
+		
+		
+	function addMarker(properties) {
+		
+	     //var InfoWindow = null;
+		 var marker = new google.maps.Marker({
+          position: properties.coordinates,
+          map: map,
+		  icon:'http://kengroup.crealog.kz/media/img/pip.png'
+          });			 
+			
+			
+		if(properties.info)
+         {
+          	
+			InfoWindow[InfoWindowCount] = new google.maps.InfoWindow({
+          content: properties.info
+         });
+		 var InfoWindowCountLocal = InfoWindowCount;
+          marker.addListener('click', function(){  
+				for (var i = 0; i < InfoWindowCount; i++) {
+					InfoWindow[i].close();
+				}
+
+            //InfoWindow.close();  
+		  	InfoWindow[InfoWindowCountLocal].open(map,marker);
+        })	        
+		
+		
+		  }
+		  
+		InfoWindowCount++;
+	  }	 
+	  
+	  
+	  
+
+  	var uluru2 = {lat:49.805096, lng:73.084552};
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+          zoom: 17,
+          center: uluru2
+        });
+		
+		addMarker2({
+		   coordinates:{lat: 49.805096, lng: 73.084552},
+		   info:'<div class="pipfon2"><div class="img33 kz3"></div></div>' 
+		
+		});	
+	
+	  function addMarker2(properties) {
+		
+	      //var InfoWindow = null;
+		 var marker2 = new google.maps.Marker({
+          position: properties.coordinates,
+          map: map2,
+		  icon:'/media/img/kenmap33.png'
+          });			 
+			
+			
+		if(properties.info)
+         {
+          	
+			InfoWindow[InfoWindowCount] = new google.maps.InfoWindow({
+          content: properties.info
+         });
+		 var InfoWindowCountLocal = InfoWindowCount;
+          marker.addListener('click', function(){  
+				for (var i = 0; i < InfoWindowCount; i++) {
+					InfoWindow[i].close();
+				}
+
+            //InfoWindow.close();  
+		  	InfoWindow[InfoWindowCountLocal].open(map2,marker2);
+        })	        
+		
+		
+		  }
+		  
+		InfoWindowCount++;
+	  }	 	  
+	 
+	  
+	  
+	  
+	  var uluru4 = {lat:49.800057, lng:73.098202};
+        var map4 = new google.maps.Map(document.getElementById('map4'), {
+          zoom: 17,
+          center: uluru4
+        });
+		
+		addMarker3({
+		   coordinates:{lat:49.800057, lng:73.098202},
+		   info:'<div class="pipfon2"><div class="img33 kz3"></div></div>' 
+		
+		});	
+	
+	  function addMarker3(properties) {
+		
+	     //var InfoWindow = null;
+		 var marker3 = new google.maps.Marker({
+          position: properties.coordinates,
+          map: map4,
+		  icon:'/media/img/kenmap33.png'
+          });	
+			
+		if(properties.info)
+         {
+          	
+			InfoWindow[InfoWindowCount] = new google.maps.InfoWindow({
+          content: properties.info
+         });
+		 var InfoWindowCountLocal = InfoWindowCount;
+          marker.addListener('click', function(){  
+				for (var i = 0; i < InfoWindowCount; i++) {
+					InfoWindow[i].close();
+				}
+
+            //InfoWindow.close();  
+		  	InfoWindow[InfoWindowCountLocal].open(map4,marker3);
+        })	        
+		
+		
+		  }
+		  
+		InfoWindowCount++;
+	  }	 	  
+	 	  
+		  
+      }
+    </script>
+
+
+
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDucH09wJLboCpVX35aE6WdivC4Y2nmiyI&callback=initMap">   </script>	
+	
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="../../media/js/map.js"></script>
+ 
+</body>
+</html>
