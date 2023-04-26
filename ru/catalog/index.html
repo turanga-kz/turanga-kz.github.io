@@ -113,22 +113,21 @@
    <div class="container">  
 	  <div class="ourpart">Наши партнеры</div>
 	  <div class="row logos">
-	  
-			  <div class="col-sm">
+	  <div class="col-sm">
 				   <a href="index.html">
-		             <img alt="Картинка" src="../../media/img/partner_total.png">
+		             <img alt="Rocket Lubricants" src="../../media/img/partner_total.png" width="150">
 			       </a>
 			  </div>
  
 			  <div class="col-sm">
 				   <a href="index.html">
-		             <img alt="Картинка" src="../../media/img/partner_shell.png">
+		             <img alt="DropasA" src="../../media/img/partner_shell.png" width="300">
 			       </a>
 			  </div>
 			 
 			  <div class="col-sm">
 				   <a href="index.html">
-		             <img alt="Картинка" src="../../media/img/partner_mobil1.png">
+		             <img alt="Petronas" src="../../media/img/partner_mobil1.png" width="250">
 			       </a>
 			  </div>
 			  
@@ -171,7 +170,7 @@
 				  
 				  <div class="col-sm mail">
 						Электронный адрес:
-                        <a href="mailto:kengroup@kengroup.kz">mail@turanga.com.kz</a>
+                        <a href="mailto:mail@turanga.com.kz">mail@turanga.com.kz</a>
 			      </div>
 			 </div>
 		</div>
@@ -285,8 +284,8 @@ $("#form_search").click(function () {
         });
 		
 		addMarker({
-		   coordinates:{lat:50.2797, lng:57.2072},
-		   info:'<div class="pipfon2">Актюбинск</div>' 
+		   coordinates:{lat:43.2419, lng:76.8933},
+		   info:'<div class="pipfon2">Алматы</div>' 
 		});
 		
 		addMarker({
@@ -295,26 +294,7 @@ $("#form_search").click(function () {
 		});	
 
       		
-		addMarker({
-		   coordinates:{lat:49.8019, lng:73.1021},
-		   info:'<div class="pipfon2">Караганда</div>' 
-		});
-		
-		addMarker({
-		   coordinates:{lat:52.2833, lng:76.9667},
-		   info:'<div class="pipfon2">Павлодар</div>' 
-		});		
-		
-		addMarker({
-		   coordinates:{lat: 51.1801, lng: 71.446},
-		   info:'<div class="pipfon2">Астана</div>' 
-		
-		});
-		
-		addMarker({
-		   coordinates:{lat:	49.9714, lng:82.6059},
-		   info:'<div class="pipfon2">Усть-Каменогорск</div>' 
-		});
+
 		
 		
 	function addMarker(properties) {
@@ -323,7 +303,7 @@ $("#form_search").click(function () {
 		 var marker = new google.maps.Marker({
           position: properties.coordinates,
           map: map,
-		  icon:'http://kengroup.crealog.kz/media/img/pip.png'
+		  icon:'../../media/img/pip.png'
           });			 
 			
 			
