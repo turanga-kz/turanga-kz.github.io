@@ -156,7 +156,7 @@
 		  #map4 {height:400px}
 		</style>
 		
-	     <div id="map"></div>
+ <iframe  style="max-width: 100% !important; width: 100%; height: 562px;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://umap.openstreetmap.fr/en/map/turanga_927126" ></iframe><br/>
 	    
 	  
 	 </div>
@@ -280,70 +280,6 @@ $("#form_search").click(function () {
 });		
 		
 </script>
- 
- 
- <script>
-	var InfoWindow = {},
-	InfoWindowCount = 0;
-      function initMap() {	  
-	   
-        var uluru = {lat: 49.83333, lng: 73.1658};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 5,
-          center: uluru
-        });
-		
-		addMarker({
-		   coordinates:{lat:43.2419, lng:76.8933},
-		   info:'<div class="pipfon2">Алматы</div>' 
-		});
-		
-		addMarker({
-		   coordinates:{lat:53.2144, lng:63.6246},
-		   info:'<div class="pipfon2">Костанай</div>' 
-		});	
-
-      		
-
-		
-		
-	function addMarker(properties) {
-		
-	     //var InfoWindow = null;
-		 var marker = new google.maps.Marker({
-          position: properties.coordinates,
-          map: map,
-		  icon:'../../media/img/pip.png'
-          });			 
-			
-			
-		if(properties.info)
-         {
-          	
-			InfoWindow[InfoWindowCount] = new google.maps.InfoWindow({
-          content: properties.info
-         });
-		 var InfoWindowCountLocal = InfoWindowCount;
-          marker.addListener('click', function(){  
-				for (var i = 0; i < InfoWindowCount; i++) {
-					InfoWindow[i].close();
-				}
-
-            //InfoWindow.close();  
-		  	InfoWindow[InfoWindowCountLocal].open(map,marker);
-        })	        
-		
-		
-		  }
-		  
-		InfoWindowCount++;
-	  }	 
-	  
-}
-    </script>
-
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDucH09wJLboCpVX35aE6WdivC4Y2nmiyI&callback=initMap">   </script>
 	
 </body>
 </html>
