@@ -268,79 +268,43 @@
 	&nbsp;</p>
 
 	<div id="#form">
-	
-	<h2>Оставить заявку: </h2>
-	<script type="text/javascript">var submitted=false;</script>
 
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='feedbacked.html';}"></iframe>
-
-<form class="feedback" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeuu3bS-vOF3r2mQjPrfzBhA-cwMYQrxLFi1ksDJBMsx3UHiA/formResponse" method="POST"  target="hidden_iframe" onsubmit="submitted=true;" id="contactsForm">
-
-	<div class="form-element">
-		<p style="margin-left: 0.5em;" >Ваше имя: </p>
-		<input type="text"  id="formName" name="entry.884069389" placeholder="Иван Иванов" class="required">
-	</div>
-	
-	<div class="form-element">
-		<p style="margin-left: 0.5em;">Ваше номер телефона: </p>
-		<input type="text" id="formContacts" name="entry.701579824" placeholder="+7 (ХХХ) ХХХ ХХ ХХ" class="required">
-	</div>
-	
-
-	
-	<div class="form-element" style="">
- <br> 	<button id="feedback" name="send" class="form-element">Отправить</button>
-	
-	</div>
-</form>
+		<h3>Спасибо!</h3>
+			<p style="">
+					В скором времени сы свяжемся с вами!</p></br></br></br>
 		</div>
 	</div>
 </div>
 
-	<script>
-		console.log(
-      ` ${formName.value}  ${formContacts.value}`
-    );
-		let contactsForm = document.getElementById("contactsForm");
 
-		loginForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  let formName = document.getElementById("formName");
-  let formContacts = document.getElementById("formContacts");
-
-  if (formName.value == "" || formContacts.value == "") {
-    alert("Поля не заполнены!");
-  } else {
-    // perform operation with form input
-    
-    console.log(
-      ` ${formName.value}  ${formContacts.value}`
-    );
-}});
-	// $(function(){
-	// 	$('form').submit(function(e){
-	// 		var err = 0;
-			
-	// 		// Проверяем обязательные поля на пустоту
-	// 		$('.required').each(function(indx, elem){
-	// 			if($(elem).val() == '')
-	// 				err = 1;
-	// 		});
-	// 		 console.log("!!!!"); 
-	// 		// Если хоть одно поле не заполнено, не даем отправиться форме и выдаем сообщение
-	// 		if(err > 0){
-	// 			e.preventDefault();
-	// 			alert('Вы не заполнили все обязательные поля!');
-	// 		} else{
-	// 			
-	// 		}
-	// 	});
-	// });
-</script>
 
 </section>
 
+
+
+
+
+
+
+<script>
+	$(function(){
+		$('form').submit(function(e){
+			var err = 0;
+			
+			// Проверяем обязательные поля на пустоту
+			$('.required').each(function(indx, elem){
+				if($(elem).val() == '')
+					err = 1;
+			});
+			
+			// Если хоть одно поле не заполнено, не даем отправиться форме и выдаем сообщение
+			if(err > 0){
+				e.preventDefault();
+				alert('Вы не заполнили все обязательные поля!');
+			}
+		});
+	});
+</script>
 
 
 <style>
@@ -655,7 +619,102 @@ $("#form_search").click(function () {
 		  
 		InfoWindowCount++;
 	  }	 
-}
+	  
+	  
+	  
+
+  	var uluru2 = {lat:49.805096, lng:73.084552};
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+          zoom: 17,
+          center: uluru2
+        });
+		
+		addMarker2({
+		   coordinates:{lat: 49.805096, lng: 73.084552},
+		   info:'<div class="pipfon2"><div class="img33 kz3"></div></div>' 
+		
+		});	
+	
+	  function addMarker2(properties) {
+		
+	      //var InfoWindow = null;
+		 var marker2 = new google.maps.Marker({
+          position: properties.coordinates,
+          map: map2,
+		  icon:'/media/img/map33.png'
+          });			 
+			
+			
+		if(properties.info)
+         {
+          	
+			InfoWindow[InfoWindowCount] = new google.maps.InfoWindow({
+          content: properties.info
+         });
+		 var InfoWindowCountLocal = InfoWindowCount;
+          marker.addListener('click', function(){  
+				for (var i = 0; i < InfoWindowCount; i++) {
+					InfoWindow[i].close();
+				}
+
+            //InfoWindow.close();  
+		  	InfoWindow[InfoWindowCountLocal].open(map2,marker2);
+        })	        
+		
+		
+		  }
+		  
+		InfoWindowCount++;
+	  }	 	  
+	 
+	  
+	  
+	  
+	  var uluru4 = {lat:49.800057, lng:73.098202};
+        var map4 = new google.maps.Map(document.getElementById('map4'), {
+          zoom: 17,
+          center: uluru4
+        });
+		
+		addMarker3({
+		   coordinates:{lat:49.800057, lng:73.098202},
+		   info:'<div class="pipfon2"><div class="img33 kz3"></div></div>' 
+		
+		});	
+	
+	  function addMarker3(properties) {
+		
+	     //var InfoWindow = null;
+		 var marker3 = new google.maps.Marker({
+          position: properties.coordinates,
+          map: map4,
+		  icon:'/media/img/map33.png'
+          });	
+			
+		if(properties.info)
+         {
+          	
+			InfoWindow[InfoWindowCount] = new google.maps.InfoWindow({
+          content: properties.info
+         });
+		 var InfoWindowCountLocal = InfoWindowCount;
+          marker.addListener('click', function(){  
+				for (var i = 0; i < InfoWindowCount; i++) {
+					InfoWindow[i].close();
+				}
+
+            //InfoWindow.close();  
+		  	InfoWindow[InfoWindowCountLocal].open(map4,marker3);
+        })	        
+		
+		
+		  }
+		  
+		InfoWindowCount++;
+	  }	 	  
+	 	  
+		  
+      }
 </script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap">   </script>
