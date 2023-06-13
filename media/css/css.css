@@ -249,7 +249,7 @@ form.top-menu-second__form input[type="submit"] {display: inline-block; vertical
 .kz77 {background: url(../../files/images/b3/27/abff538ba87a74803b485293e13e56e4.jpg) no-repeat center center; padding-top: 91px;}
 .kz88 {background: url(../../files/images/b3/25/d1977cf1dceb975db0ae2cf645999ff4.jpg) no-repeat center center; padding-top: 86px;}
 
-.form-element input, .form-element textarea {width:80%!important}
+.form-element input, .form-element textarea {width:110%!important}
 button#vopros {margin-left: 50px;}
 
 
@@ -471,6 +471,7 @@ h1 {font-size:26px!important}
 .left_colobor , .right_colobor{display:block!important; width:100%!important; margin:0!important}
 .right_colobor {margin-top:20px!important;}
 .catalog_ob li {display:block!important; width:100%!important; padding-left:0!important;}
+.form_ob li {display:block!important; width:100%!important; padding-left:0!important;}
 .leftcol , .rightocol , .catalog_ul li{width:100%; display:block;}
 .news .bx-wrapper .bx-controls-direction a { top: -486px!important;}
 header i {display:none!important;}
@@ -600,6 +601,7 @@ h1 {font-size:26px!important}
 .left_colobor , .right_colobor{display:block!important; width:100%!important; margin:0!important}
 .right_colobor {margin-top:20px!important;}
 .catalog_ob li {display:block!important; width:100%!important; padding-left:0!important;}
+.form_ob li {display:block!important; width:100%!important; padding-left:0!important;}
 .leftcol , .rightocol , .catalog_ul li{width:100%; display:block;}
 .news .bx-wrapper .bx-controls-direction a { top:0!important;}
 
@@ -683,8 +685,17 @@ header i {display:none!important;}
 .catalog_ob {text-align:center}	
 
 .catalog_ob li {display:inline-block; vertical-align:top; width:29%; list-style:none; height:265px; background:none; margin-bottom:20px}	   
- .catalog_ob li  a {width:100%; height:265px; display:block; text-decoration:none; position:relative; text-decoration:none}
+ .catalog_ob li  a {width:100%; height:265px; display:block; position:relative; text-decoration:none}
   .catalog_ob li  a u {  background-color: rgba(16, 68, 128, 0.8);  color:#fff; font-size:24px; position:absolute; left:0; bottom:0; padding:10px; width:100%; text-decoration:none; text-align:center; z-index:10}
+
+.form_ob {text-align:left} 
+
+.form_ob li {display:inline-block; vertical-align:top;  list-style:none;  background:none; margin-bottom:20px}       
+.form_ob li img {height: 35em; display:block; text-decoration:none; position:relative; text-decoration:none; padding-right:90px; padding-left:90px; }
+.form_ob li p { font-size:27px; position:relative; left:0; bottom:0; padding:10px; width:100%; }
+.form_ob li b { font-size:22px; position:relative; left:0; bottom:0; padding:10px; width:100%; }
+.form_ob h2 { margin-top:70px; font-size:32px; }
+
 b.ten {background: url(../img/fon_ten.png) repeat-x left top; position:absolute; left:0; top:0; width:100%; height:265px}
 .catalog_ob_under li a u {font-size:14px}
 .left_colobor { width:48%;}
