@@ -688,6 +688,12 @@ header i {display:none!important;}
  .catalog_ob li  a {width:100%; height:265px; display:block; position:relative; text-decoration:none}
   .catalog_ob li  a u {  background-color: rgba(16, 68, 128, 0.8);  color:#fff; font-size:24px; position:absolute; left:0; bottom:0; padding:10px; width:100%; text-decoration:none; text-align:center; z-index:10}
 
+
+.catalog_non_image li {display:inline-grid; vertical-align:top; list-style:none;  background:none; margin-bottom:20px; margin-left:15px; box-shadow: 0px 0px 5px 1px #CCC;}       
+ .catalog_non_image li {width:29%; position:relative; text-decoration:none; }
+    .catalog_non_image li u {color:#104480;  font-size:20px; padding-right: 20px; padding-top: 20px;  left:0; bottom:0; width:100%; text-decoration:none; font-weight: 600; z-index:10}
+    .catalog_non_image li  p {text-align: left;  color:#000; font-size: 13px; padding-right: 10px; padding-bottom: 40px; padding-top: 15px; width:100%; text-decoration:none;  z-index:10; line-height: 18px!important;}
+
 .form_ob {text-align:left} 
 
 .form_ob li {display:inline-block; vertical-align:top;  list-style:none;  background:none; margin-bottom:20px}       
@@ -733,3 +739,7 @@ vertical-align:top
 .breadcrumbs  a:hover {color:#ccc}
 .readblock img { padding-top:15px}
 .pipfon {background: url(../img/fon_pip.png) no-repeat left top; width:212px; height:195px}
+
+@media only screen and (max-width: 800px) {
+ .catalog_non_image li {width:100%}
+}
