@@ -700,7 +700,8 @@ header i {display:none!important;}
 .form_ob li img {height: 35em; display:block; text-decoration:none; position:relative; text-decoration:none; padding-right:90px; padding-left:90px; }
 .form_ob li p { font-size:27px; position:relative; left:0; bottom:0; padding:10px; width:100%; }
 .form_ob li b { font-size:22px; position:relative; left:0; bottom:0; padding:10px; width:100%; }
-.form_ob h2 { margin-top:70px; font-size:32px; }
+.form_ob h2 { margin-top:70px; font-size:32px; margin-left: 30px;}
+.form_ob .form-element {margin-left: 30px;}
 
 b.ten {background: url(../img/fon_ten.png) repeat-x left top; position:absolute; left:0; top:0; width:100%; height:265px}
 .catalog_ob_under li a u {font-size:14px}
